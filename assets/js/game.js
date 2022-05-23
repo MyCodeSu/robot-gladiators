@@ -10,11 +10,19 @@ var playerMoney = 10;
 
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robot Trumble"];
 
-var enemyHealth = 50;
+console.log(enemyNames[0]);
+console.log(enemyNames[1]);
+console.log(enemyNames[2]);
+console.log(enemyNames.length);
 
-var enemyAttack = 12;
+// Game States
+// "WIN" - Player robot has defeated all enemy-robots
+//    * Fight all enemy-robots
+//    * Defeat each enemy-robot
+// "LOSE" - Player robot's health is zero or less
+
 
 var fight = function () {
 
@@ -109,4 +117,4 @@ fight();
 
 
 
-fight();
+// fight();
